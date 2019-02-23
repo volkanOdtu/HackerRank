@@ -12,11 +12,6 @@ import static java.util.stream.Collectors.toList;
 
 public class SolutionTriplets {
 	
-	static int diagonalDifference(int[][] arr) {
-
-		return 0;
-    }
-	
 	static long aVeryBigSum(long[] ar) {
 		long result = 0;
 		
@@ -53,18 +48,10 @@ public class SolutionTriplets {
 		
 		Scanner in = new Scanner(System.in);  
 		int arrLength = Integer.valueOf( in.nextLine());  
-		String numbers ;
-		String numberArr[];
 		
+		String numbers = in.nextLine();  
 		
-		for( int j = 0 ; j < arrLength ;j++ )
-		{
-			numbers = in.nextLine();
-			
-		}
-		
-		
-		
+		/*
 		long[] ar = new long[arrLength];
 		
 		String numberArr[] = numbers.split(" ");
@@ -73,7 +60,7 @@ public class SolutionTriplets {
 		{
 			ar[i] = Long.valueOf(numberArr[i]);
 		}
-		/*
+		
 		long result = aVeryBigSum(ar);
 		
 		System.out.println(result); */
