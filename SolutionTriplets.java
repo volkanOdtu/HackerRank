@@ -43,6 +43,16 @@ public class SolutionTriplets {
 		
     }
 
+	static int SimpleArraySum(int[] ar)
+	{
+		int sum =0;
+		for(int i= 0; i < ar.length ;i++ )
+		{
+			sum = sum + ar[i];
+		}
+		return sum;
+	}
+	
 	public static void main(String[] args) throws IOException {		
 		//String fileOutputPath = "C:\\Hackerrank\\output";
 		
@@ -51,16 +61,20 @@ public class SolutionTriplets {
 		
 		String numbers = in.nextLine();  
 		
-		/*
-		long[] ar = new long[arrLength];
+		
+		int[] ar = new int[arrLength];
 		
 		String numberArr[] = numbers.split(" ");
 		
 		for(int i = 0 ; i< ar.length ;i++ )
 		{
-			ar[i] = Long.valueOf(numberArr[i]);
+			ar[i] = Integer.valueOf(numberArr[i]);
 		}
+		int result =  SimpleArraySum(ar);
 		
+		System.out.println(result); 
+		
+		/*
 		long result = aVeryBigSum(ar);
 		
 		System.out.println(result); */
